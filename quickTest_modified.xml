@@ -323,7 +323,7 @@
    <mergerTreeOutputter value="analyzer"/>
  </mergerTreeOutputter>
   <outputTimes value="list">
-    <redshifts value="0.0 5.0 10.5 20"/>
+    <redshifts value="0.0 6.0 20"/>
   </outputTimes>
 </parameters>
 
