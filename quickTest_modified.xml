@@ -324,7 +324,7 @@
   
 
   <!-- Output options -->
-  <galacticusOutputFileName value="100_BH_SEED.hdf5"/>
+  <galacticusOutputFileName value="galacticus.hdf5"/>
   <mergerTreeOutputter value="multi">
    <mergerTreeOutputter value="standard"/>
    <mergerTreeOutputter value="analyzer"/>
