@@ -15,7 +15,6 @@
         <haloMassMaximum value="1.0e12"/>
         <pointsPerDecade value="30"    />
     </task>
-    <task value="comovingDistances"/>
   </task>
   <!-- revisar con 12, 14 HMM -->
 
@@ -33,8 +32,12 @@
   
   <diskMassDistribution value="exponentialDisk">
     <dimensionless value="true"/>
-    
   </diskMassDistribution>
+  
+  <diskMassGas value="10e5"/>
+  <diskMassStellar value="10e5"/>
+  <diskVelocity value="0.3"/>
+  
   <spheroidMassDistribution value="hernquist">
     <dimensionless value="true"/>
   </spheroidMassDistribution>
@@ -229,7 +232,7 @@
   
   <!-- Black hole options -->
   <blackHoleBinaryMergers value="rezzolla2008"/>
-  <blackHoleSeedMass value="0"/>
+  <blackHoleSeedMass value="100"/>
   <blackHoleWindEfficiency value="0.0024"/>
   <blackHoleWindEfficiencyScalesWithRadiativeEfficiency value="true"/>
   <blackHoleOutputAccretion value="true"/>
@@ -239,6 +242,9 @@
   <bondiHoyleAccretionEnhancementSpheroid value="5.0"/>
   <bondiHoyleAccretionTemperatureSpheroid value="100"/>
   <bondiHoyleAccretionHotModeOnly value="true"/>
+  
+  <!-- Galactic disk options -->
+
   
 
   <!-- Satellite orbit options -->
@@ -280,6 +286,7 @@
         </stellarFeedbackOutflows>
       </stellarFeedbackOutflows>
     </nodeOperator>
+    
     <nodeOperator value="stellarFeedbackSpheroids">
       <stellarFeedbackOutflows value="rateLimit">
         <timescaleOutflowFractionalMinimum value="0.001"/>
@@ -317,7 +324,7 @@
   
 
   <!-- Output options -->
-  <galacticusOutputFileName value="test_a.hdf5"/>
+  <galacticusOutputFileName value="100_BH_SEED.hdf5"/>
   <mergerTreeOutputter value="multi">
    <mergerTreeOutputter value="standard"/>
    <mergerTreeOutputter value="analyzer"/>
@@ -325,6 +332,7 @@
   <outputTimes value="list">
     <redshifts value="0.0 6.0 20"/>
   </outputTimes>
+  
 </parameters>
 
 
