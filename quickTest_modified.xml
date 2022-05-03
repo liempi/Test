@@ -34,6 +34,7 @@
     <dimensionless value="true"/>
   </diskMassDistribution>
   
+  
   <diskMassGas value="1e05"/>
   <diskMassStellar value="1e10"/>
   <diskVelocity value="3"/>
@@ -43,13 +44,10 @@
   <spheroidVelocity value="3"/>
   <spheroidOutputStarFormationRate value="true"/>
   <hotHaloMass value="1e05"/>
-  <hotHaloOutflowedMass value="1e2"/>
-  <hotHaloTrackStrippedGas value="true"/>
+  <hotHaloOutflowedMass value="10e02"/>
   <starveSatellitesOutflowed value="true"/>
   
-  
-  
-  
+
   <spheroidMassDistribution value="hernquist">
     <dimensionless value="true"/>
   </spheroidMassDistribution>
@@ -87,18 +85,13 @@
   <virialDensityContrast value="sphericalCollapseClsnlssMttrCsmlgclCnstnt"/>
 
   <!-- Merger tree building options -->
-  
   <mergerTreeConstructor value="build"/>
-
   <redshiftBase value="0.0"/>
-  
   <mergerTreeBuilder value="cole2000">
-      
     <accretionLimit value="0.1"/>
-    
     <mergeProbability value="0.1"/>
-    
     <redshiftMaximum value="30"/>
+    <allTreesExistAtFinalTime value="false">
   </mergerTreeBuilder>
   
   <mergerTreeBranchingProbability value="parkinsonColeHelly">
@@ -108,8 +101,8 @@
     <accuracyFirstOrder value="+0.10"/>
   </mergerTreeBranchingProbability>
   <mergerTreeBuildMasses value="sampledDistributionUniform">
-    <massTreeMinimum value="1.0e5"/>
-    <massTreeMaximum value="1.0e7"/>
+    <massTreeMinimum value="1.0e05"/>
+    <massTreeMaximum value="1.0e12"/>
     <treesPerDecade value="30"/>
   </mergerTreeBuildMasses>
   
@@ -168,6 +161,7 @@
   <hotHaloRamPressureForce value="font2008"/>
   <hotHaloRamPressureTimescale value="ramPressureAcceleration"/>
   <hotHaloOutflowStrippingEfficiency value="0.1"/>
+  <hotHaloTrackStrippedGas value="true"/>
 
   <!-- Galactic structure solver options -->
   <galacticStructureSolver value="equilibrium"/>
@@ -198,7 +192,6 @@
   <stellarPopulationSelector value="fixed"/>
   <stellarWinds value="leitherer1992"/>
   
-
   <initialMassFunction value="chabrier2001"/>
   <stellarPopulation value="standard">
     <recycledFraction value="0.46"/>
@@ -206,11 +199,8 @@
   </stellarPopulation>
   <elementsToTrack value="C N O Fe H He"/>
   
-  
   <mergerTreeMassResolution value="fixed">
-
-    <massResolution value="1.0e2"/>
-
+    <massResolution value="1.0e02"/>
   </mergerTreeMassResolution>
 
   <!-- AGN feedback options -->
@@ -239,7 +229,6 @@
   <!--Stellar Feedback-->
   <supernovaePopulationIII value="hegerWoosley2002">
   </supernovaePopulationIII>
-      
   
   <!-- Black hole options -->
   <blackHoleBinaryMergers value="rezzolla2008"/>
@@ -254,10 +243,6 @@
   <bondiHoyleAccretionTemperatureSpheroid value="100"/>
   <bondiHoyleAccretionHotModeOnly value="true"/>
   
-  <!-- Galactic disk options -->
-
-  
-
   <!-- Satellite orbit options -->
   <satelliteOrbitStoreOrbitalParameters value="true"/>
 
@@ -333,16 +318,13 @@
     <timestepHostRelative value="0.1"/>
   </mergerTreeEvolver>
   
-
   <!-- Output options -->
   <galacticusOutputFileName value="galacticus.hdf5"/>
   <mergerTreeOutputter value="multi">
    <mergerTreeOutputter value="standard"/>
-   <mergerTreeOutputter value="analyzer"/>
  </mergerTreeOutputter>
   <outputTimes value="list">
     <redshifts value="0.0 6.0 20"/>
   </outputTimes>
   
 </parameters>
-
