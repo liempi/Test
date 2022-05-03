@@ -35,8 +35,21 @@
   </diskMassDistribution>
   
   <diskMassGas value="10e5"/>
-  <diskMassStellar value="10e5"/>
-  <diskVelocity value="0.3"/>
+  <diskMassStellar value="10e10"/>
+  <diskVelocity value="3"/>
+  <diskOutputStarFormationRate value="true"/>
+  <spheroidMassGas value="10e5"/>
+  <spheroidMassStellar value="10e10"/>
+  <spheroidVelocity value="3"/>
+  <spheroidOutputStarFormationRate value="true"/>
+  <hotHaloMass value="10e5"/>
+  <hotHaloOutflowedMass value="10e2"/>
+  <hotHaloTrackStrippedGas value="true"/>
+  <hotHaloTrackStrippedGas value="true"/>
+  <starveSatellitesOutflowed value="true"/>
+  
+  
+  
   
   <spheroidMassDistribution value="hernquist">
     <dimensionless value="true"/>
@@ -334,5 +347,4 @@
   </outputTimes>
   
 </parameters>
-
 
