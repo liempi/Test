@@ -34,12 +34,12 @@
     <dimensionless value="true"/>
   </diskMassDistribution>
   
-  <diskMassGas value="10e5"/>
-  <diskMassStellar value="10e10"/>
+  <diskMassGas value="1e5"/>
+  <diskMassStellar value="1e10"/>
   <diskVelocity value="3"/>
   <diskOutputStarFormationRate value="true"/>
-  <spheroidMassGas value="10e5"/>
-  <spheroidMassStellar value="10e10"/>
+  <spheroidMassGas value="1e5"/>
+  <spheroidMassStellar value="1e10"/>
   <spheroidVelocity value="3"/>
   <spheroidOutputStarFormationRate value="true"/>
   <hotHaloMass value="10e5"/>
