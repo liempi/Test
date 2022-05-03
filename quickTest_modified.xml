@@ -35,16 +35,16 @@
   </diskMassDistribution>
   
   
-  <diskMassGas value="1e05"/>
-  <diskMassStellar value="1e10"/>
-  <diskVelocity value="3"/>
+  <diskMassGas value="1.0e05"/>
+  <diskMassStellar value="1.0e10"/>
+  <diskVelocity value="1"/>
   <diskOutputStarFormationRate value="true"/>
-  <spheroidMassGas value="1e05"/>
+  <spheroidMassGas value="1.0e05"/>
   <spheroidMassStellar value="1e10"/>
-  <spheroidVelocity value="3"/>
+  <spheroidVelocity value="1"/>
   <spheroidOutputStarFormationRate value="true"/>
-  <hotHaloMass value="1e05"/>
-  <hotHaloOutflowedMass value="10e02"/>
+  <hotHaloMass value="1.0e05"/>
+  <hotHaloOutflowedMass value="1.0e03"/>
   <starveSatellitesOutflowed value="true"/>
   
 
@@ -91,7 +91,7 @@
     <accretionLimit value="0.1"/>
     <mergeProbability value="0.1"/>
     <redshiftMaximum value="30"/>
-    <allTreesExistAtFinalTime value="false">
+    <allTreesExistAtFinalTime value="false"/>
   </mergerTreeBuilder>
   
   <mergerTreeBranchingProbability value="parkinsonColeHelly">
