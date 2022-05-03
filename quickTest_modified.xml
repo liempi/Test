@@ -45,7 +45,6 @@
   <hotHaloMass value="10e5"/>
   <hotHaloOutflowedMass value="10e2"/>
   <hotHaloTrackStrippedGas value="true"/>
-  <hotHaloTrackStrippedGas value="true"/>
   <starveSatellitesOutflowed value="true"/>
   
   
