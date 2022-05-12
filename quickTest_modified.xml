@@ -232,7 +232,7 @@
   
   <!-- Black hole options -->
   <blackHoleBinaryMergers value="rezzolla2008"/>
-  <blackHoleSeedMass value="100"/>
+  <blackHoleSeedMass value="1000"/>
   <blackHoleWindEfficiency value="0.0024"/>
   <blackHoleWindEfficiencyScalesWithRadiativeEfficiency value="true"/>
   <blackHoleOutputAccretion value="true"/>
@@ -241,7 +241,7 @@
   <bondiHoyleAccretionEnhancementHotHalo value="6.0"/>
   <bondiHoyleAccretionEnhancementSpheroid value="5.0"/>
   <bondiHoyleAccretionTemperatureSpheroid value="100"/>
-  <bondiHoyleAccretionHotModeOnly value="true"/>
+  <bondiHoyleAccretionHotModeOnly value="false"/>
   
   <!-- Satellite orbit options -->
   <satelliteOrbitStoreOrbitalParameters value="true"/>
