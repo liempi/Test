@@ -34,20 +34,6 @@
     <dimensionless value="true"/>
   </diskMassDistribution>
   
-  
-  <diskMassGas value="1.0e05"/>
-  <diskMassStellar value="1.0e10"/>
-  <diskVelocity value="1"/>
-  <diskOutputStarFormationRate value="true"/>
-  <spheroidMassGas value="1.0e05"/>
-  <spheroidMassStellar value="1e10"/>
-  <spheroidVelocity value="1"/>
-  <spheroidOutputStarFormationRate value="true"/>
-  <hotHaloMass value="1.0e05"/>
-  <hotHaloOutflowedMass value="1.0e03"/>
-  <starveSatellitesOutflowed value="true"/>
-  
-
   <spheroidMassDistribution value="hernquist">
     <dimensionless value="true"/>
   </spheroidMassDistribution>
@@ -91,7 +77,6 @@
     <accretionLimit value="0.1"/>
     <mergeProbability value="0.1"/>
     <redshiftMaximum value="30"/>
-    <allTreesExistAtFinalTime value="false"/>
   </mergerTreeBuilder>
   
   <mergerTreeBranchingProbability value="parkinsonColeHelly">
@@ -125,7 +110,7 @@
   <!-- Halo accretion options -->
   <accretionHalo value="simple">
     <redshiftReionization value="10.5"/>
-    <velocitySuppressionReionization value="35.0"/>
+    <velocitySuppressionReionization value="10.0"/>
   </accretionHalo>
 
   <!-- Hot halo gas cooling model options -->
@@ -261,6 +246,12 @@
 
   <!-- Node evolution and physics -->
   <nodeOperator value="multi">
+    <!-- Cosmological epoch -->
+    <nodeOperator value="evolutionOutput"/>
+    <!-- DMO evolution -->
+    <nodeOperator value="DMOInterpolate"/>
+    <nodeOperator value="massCooled"/>
+    <nodeOperator value="agesStellarMassWeighted"/>
     <!-- Halo concentrations -->
     <nodeOperator value="darkMatterProfileScaleSet"        />
     <nodeOperator value="darkMatterProfileScaleInterpolate"/>
