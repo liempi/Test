@@ -90,7 +90,6 @@
     <accretionLimit value="0.1"/>
     <mergeProbability value="0.1"/>
     <redshiftMaximum value="30"/>
-    <allTreesExistAtFinalTime value="false"/>
   </mergerTreeBuilder>
   
   <mergerTreeBranchingProbability value="parkinsonColeHelly">
