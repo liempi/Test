@@ -308,7 +308,6 @@
   <mergerTreeEvolver value="standard">
     <timestepHostAbsolute value="1.0"/>
     <timestepHostRelative value="0.1"/>
-    <allTreesExistAtFinalTime value="false"/>
   </mergerTreeEvolver>
   
   <!-- Output options -->
