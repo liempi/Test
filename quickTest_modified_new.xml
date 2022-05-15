@@ -32,16 +32,6 @@
   </diskMassDistribution>
   
   
-  <diskMassGas value="1.0e05"/>
-  <diskMassStellar value="1.0e10"/>
-  <diskVelocity value="1"/>
-  <spheroidMassGas value="1.0e05"/>
-  <spheroidMassStellar value="1e10"/>
-  <spheroidVelocity value="1"/>
-  <hotHaloMass value="1.0e05"/>
-  <hotHaloOutflowedMass value="1.0e03"/>
-  
-  
   <diskOutputStarFormationRate value="true"/>
   <spheroidOutputStarFormationRate value="true"/>
   <starveSatellitesOutflowed value="true"/>
@@ -198,7 +188,7 @@
   <elementsToTrack value="C N O Fe H He"/>
   
   <mergerTreeMassResolution value="fixed">
-    <massResolution value="1.0e08"/>
+    <massResolution value="1.0e05"/>
   </mergerTreeMassResolution>
 
   <!-- AGN feedback options -->
