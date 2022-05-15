@@ -271,7 +271,8 @@
           <velocityCharacteristic value="250.0"/>
           <exponent value="3.5"/>
         </stellarFeedbackOutflows>
-      </stellarFeedbackOutflows>
+      </stellarFeedbackOutflows>	
+    <nodeOperator value="evolutionOutput"/>
     </nodeOperator>
     
     <nodeOperator value="stellarFeedbackSpheroids">
