@@ -248,7 +248,6 @@
   <nodeOperator value="multi">
     <!-- Cosmological epoch -->
     <nodeOperator value="cosmicTime"/>
-    <nodeOperator value="evolutionOutput"/>
     <!-- DMO evolution -->
     <nodeOperator value="DMOInterpolate"/>
     <nodeOperator value="massCooled"/>
