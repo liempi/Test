@@ -188,7 +188,7 @@
   <elementsToTrack value="C N O Fe H He"/>
   
   <mergerTreeMassResolution value="fixed">
-    <massResolution value="1.0e05"/>
+    <massResolution value="1.0e02"/>
   </mergerTreeMassResolution>
 
   <!-- AGN feedback options -->
@@ -250,6 +250,7 @@
   <!-- Node evolution and physics -->
   <nodeOperator value="multi">
     <!-- Cosmological epoch -->
+    <nodeOperator value=""/>
     <nodeOperator value="cosmicTime"/>
     <!-- DMO evolution -->
     <nodeOperator value="DMOInterpolate"/>
