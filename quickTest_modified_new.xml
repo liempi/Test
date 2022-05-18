@@ -113,7 +113,8 @@
   <!-- Halo accretion options -->
   <accretionHalo value="simple">
     <redshiftReionization value="10.5"/>
-    <velocitySuppressionReionization value="35.0"/>
+    <velocitySuppressionReionization value="0"/>
+    <accretionNegativeAllowed value="false"/>
   </accretionHalo>
 
   <!-- Hot halo gas cooling model options -->
@@ -205,7 +206,7 @@
       <efficiencyRadiationType value="thinDisk"/>
       <adiabaticIndex value="1.444"/>
       <efficiencyRadiation value="0.01"/>
-      <energyOption value="pureADAF"/>
+      <energyOption value="ISCO"/>
       <viscosityOption value="fit"/>
     </accretionDisksADAF>
   </accretionDisks>
@@ -288,8 +289,8 @@
     <!-- Bar instability in galactic disks -->
     <nodeOperator value="barInstability">
       <galacticDynamicsBarInstability value="efstathiou1982">
-	<stabilityThresholdGaseous value="0.7"/>
-	<stabilityThresholdStellar value="1.1"/>
+    <stabilityThresholdGaseous value="0.7"/>
+    <stabilityThresholdStellar value="1.1"/>
       </galacticDynamicsBarInstability>
     </nodeOperator>
   </nodeOperator>
@@ -320,3 +321,4 @@
   </outputTimes>
   
 </parameters>
+
