@@ -189,7 +189,7 @@
   <elementsToTrack value="C N O Fe H He"/>
   
   <mergerTreeMassResolution value="fixed">
-    <massResolution value="1.0e02"/>
+    <massResolution value="1.0e07"/>
   </mergerTreeMassResolution>
 
   <!-- AGN feedback options -->
