@@ -66,18 +66,20 @@
   <cosmologicalMassVariance value="filteredPower">
     <sigma_8 value="0.807"/>
   </cosmologicalMassVariance>
-  <!-- IGM evolver -->
+  <!-- IGM evolver 
        <intergalacticMediumState value="internal"/>
        <universeOperator value="intergalacticMediumStateEvolve">
          <timeCountPerDecade value=" 10"/>
          <redshiftMaximum    value="150"/>
        </universeOperator>
 
-       <!-- Background radiation -->
+       <!-- Background radiation 
        <radiationFieldIntergalacticBackground value="intergalacticBackgroundInternal">
          <wavelengthCountPerDecade value="50"/>
          <timeCountPerDecade       value="10"/>
        </radiationFieldIntergalacticBackground>
+-->
+  
 
   <!-- Structure formation options -->
   <linearGrowth value="collisionlessMatter"/>
