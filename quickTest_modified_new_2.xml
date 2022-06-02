@@ -280,7 +280,7 @@
   <satelliteOrbitStoreOrbitalParameters value="true"/>
   
 <!-- Galaxy merger options -->
-  <virialOrbit value="spinCorrelated"/>
+  <virialOrbit value="wetzel2010"/>
   <satelliteMergingTimescales value="jiang2008">
     <timescaleMultiplier value="0.75"/>
   </satelliteMergingTimescales>
