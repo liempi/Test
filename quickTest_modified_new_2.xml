@@ -390,7 +390,7 @@
    <mergerTreeOutputter value="standard"/>
  </mergerTreeOutputter>
   <outputTimes value="list">
-    <redshifts value="0.0 6.0 20"/>
+    <redshifts value="0.0 6.0 10"/>
   </outputTimes>
   
 </parameters>
