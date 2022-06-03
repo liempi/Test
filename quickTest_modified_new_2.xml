@@ -385,7 +385,7 @@
   </mergerTreeEvolver>
   
   <!-- Output options -->
-  <outputFileName value="galacticus.hdf5"/>
+  <outputFileName value="/data/mliempi/galacticus.hdf5"/>
   <mergerTreeOutputter value="multi">
    <mergerTreeOutputter value="standard"/>
  </mergerTreeOutputter>
