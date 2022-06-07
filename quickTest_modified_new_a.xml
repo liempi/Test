@@ -28,9 +28,7 @@
   <componentSatellite value="standard"/>
   
   <componentSpheroid value="standard"/>
-  
-  <componentSatellite value="preset"/>
-  
+    
   <componentPosition value="preset"/>
   
   <diskMassDistribution value="exponentialDisk">
@@ -158,7 +156,7 @@
     <multiplier value="5.0"/>
   </hotHaloOutflowReincorporation>
 
-  < gFunction value="atomicCIECloudy"/>
+  <coolingFunction value="atomicCIECloudy"/>
   <coolingRadius value="simple"/>
   <coolingRate value="whiteFrenk1991">
     <velocityCutOff value="10000"/>
