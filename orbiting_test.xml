@@ -176,7 +176,8 @@
   
 
   <!-- Hot halo ram pressure stripping options -->
-  <hotHaloRamPressureStripping value="font2008"/>
+  <!-- font2008 -->
+  <hotHaloRamPressureStripping value="virialRadius"/>
   <hotHaloRamPressureForce value="font2008"/>
   <hotHaloRamPressureTimescale value="ramPressureAcceleration"/>
   <hotHaloOutflowStrippingEfficiency value="0.1"/>
