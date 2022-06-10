@@ -184,10 +184,10 @@
   <starveSatellites value="true"/>
   <hotHaloTrackStrippedGas value="true"/>
   
-  <RamPressureStripping value="simpleCylindrical">
+  <!--<RamPressureStripping value="simpleCylindrical">
       <rateFractionalMaximum value="10.0"/>
       <beta value="1"/>
-  </RamPressureStripping>
+  </RamPressureStripping>-->
   
   <!-- Galactic structure solver options -->
   <galacticStructureSolver value="equilibrium"/>
