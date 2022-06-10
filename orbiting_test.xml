@@ -221,7 +221,7 @@
   <!-- <elementsToTrack value="C N O Fe H He"/> -->
   
   <mergerTreeMassResolution value="fixed">
-    <massResolution value="1.0e05"/>
+    <massResolution value="1.0e09"/>
   </mergerTreeMassResolution>
   
 
