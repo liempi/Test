@@ -221,10 +221,9 @@
   <!-- <elementsToTrack value="C N O Fe H He"/> -->
   
   <mergerTreeMassResolution value="fixed">
-    <massResolution value="1.0e04"/>
+    <massResolution value="1.0e05"/>
   </mergerTreeMassResolution>
   
-  <!-- Functions that I don't know how to call -->
 
   <!-- Orbiting model of satellites -->
 
