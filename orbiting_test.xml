@@ -137,9 +137,9 @@
   </haloSpinDistribution>
 
   <!-- Halo accretion options -->
-  <accretionHalo value="simple">
-    <redshiftReionization value="10.5"/>
-    <velocitySuppressionReionization value="0"/>
+  <accretionHalo value="coldMode">
+    <thresholdStabilityShock value="0.0126"/>
+    <widthTransitionStabilityShock value="0.01"/>
   </accretionHalo>
 
   
@@ -177,13 +177,18 @@
 
   <!-- Hot halo ram pressure stripping options -->
   <!-- font2008 -->
-  <hotHaloRamPressureStripping value="virialRadius"/>
+  <hotHaloRamPressureStripping value="font"/>
   <hotHaloRamPressureForce value="font2008"/>
   <hotHaloRamPressureTimescale value="ramPressureAcceleration"/>
   <hotHaloOutflowStrippingEfficiency value="0.1"/>
   <starveSatellites value="true"/>
   <hotHaloTrackStrippedGas value="true"/>
-
+  
+  <RamPressureStripping value="simpleCylindrical">
+      <rateFractionalMaximum value="10.0"/>
+      <beta value="1"/>
+  </RamPressureStripping>
+  
   <!-- Galactic structure solver options -->
   <galacticStructureSolver value="equilibrium"/>
   <darkMatterProfile value="adiabaticGnedin2004">
