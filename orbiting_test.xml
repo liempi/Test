@@ -102,9 +102,7 @@
     <mergeProbability value="0.1"/>
   </mergerTreeBuilder>
   
-  <mergerTreeBuildMassDistribution value="powerLaw">
-      <exponent value="1.0"/>
-   </mergerTreeBuildMassDistribution>
+
   
   <mergerTreeBranchingProbability value="parkinsonColeHelly">
     <G0 value="+0.57"/>
@@ -112,11 +110,16 @@
     <gamma2 value="-0.01"/>
     <accuracyFirstOrder value="+0.10"/>
   </mergerTreeBranchingProbability>
-  <mergerTreeBuildMasses value="sampledDistributionUniform">
+  
+  <!-- <mergerTreeBuildMasses value="sampledDistributionUniform">
     <massTreeMinimum value="1.0e05"/>
     <massTreeMaximum value="1.0e13"/>
     <treesPerDecade value="30"/>
-  </mergerTreeBuildMasses>
+  </mergerTreeBuildMasses>-->
+  
+  <mergerTreeBuildMassDistribution value="powerLaw">
+      <exponent value="1.0"/>
+   </mergerTreeBuildMassDistribution>
   
   <!-- Substructure hierarchy options -->
   <mergerTreeNodeMerger value="singleLevelHierarchy"/>
@@ -184,10 +187,10 @@
   <starveSatellites value="true"/>
   <hotHaloTrackStrippedGas value="true"/>
   
-  <!--<RamPressureStripping value="simpleCylindrical">
+  <ramPressureStripping value="simpleSpherical">
       <rateFractionalMaximum value="10.0"/>
       <beta value="1"/>
-  </RamPressureStripping>-->
+  </ramPressureStripping>
   
   <!-- Galactic structure solver options -->
   <galacticStructureSolver value="equilibrium"/>
@@ -227,7 +230,7 @@
   <!-- <elementsToTrack value="C N O Fe H He"/> -->
   
   <mergerTreeMassResolution value="fixed">
-    <massResolution value="1.0e09"/>
+    <massResolution value="1.0e7"/>
   </mergerTreeMassResolution>
   
 
