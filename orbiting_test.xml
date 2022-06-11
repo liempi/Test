@@ -9,7 +9,7 @@
     </task>
     <task value="haloMassFunction">
         <haloMassMinimum value="1.0e05"/>
-        <haloMassMaximum value="1.0e13"/>
+        <haloMassMaximum value="1.0e7"/>
         <pointsPerDecade value="30"    />
     </task>
   </task>
