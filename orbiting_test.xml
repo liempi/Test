@@ -9,7 +9,7 @@
     </task>
     <task value="haloMassFunction">
         <haloMassMinimum value="1.0e05"/>
-        <haloMassMaximum value="1.0e12"/>
+        <haloMassMaximum value="1.0e13"/>
         <pointsPerDecade value="30"    />
     </task>
   </task>
@@ -102,8 +102,6 @@
     <mergeProbability value="0.1"/>
   </mergerTreeBuilder>
   
-
-  
   <mergerTreeBranchingProbability value="parkinsonColeHelly">
     <G0 value="+0.57"/>
     <gamma1 value="+0.38"/>
@@ -111,15 +109,20 @@
     <accuracyFirstOrder value="+0.10"/>
   </mergerTreeBranchingProbability>
   
-  <!-- <mergerTreeBuildMasses value="sampledDistributionUniform">
+  <!--<mergerTreeBuildMasses value="sampledDistributionUniform">
     <massTreeMinimum value="1.0e05"/>
     <massTreeMaximum value="1.0e13"/>
     <treesPerDecade value="30"/>
-  </mergerTreeBuildMasses>-->
+  </mergerTreeBuildMasses> -->
   
   <mergerTreeBuildMassDistribution value="powerLaw">
-      <exponent value="1.0"/>
+      <exponent value="1"/>
    </mergerTreeBuildMassDistribution>
+  
+  <mergerTreeMassResolution value="fixed">
+    <massResolution value="1.0e4"/>
+  </mergerTreeMassResolution>
+  
   
   <!-- Substructure hierarchy options -->
   <mergerTreeNodeMerger value="singleLevelHierarchy"/>
@@ -140,9 +143,9 @@
   </haloSpinDistribution>
 
   <!-- Halo accretion options -->
-  <accretionHalo value="coldMode">
-    <thresholdStabilityShock value="0.0126"/>
-    <widthTransitionStabilityShock value="0.01"/>
+  <accretionHalo value="simple">
+      <redshiftReionization value="9.97"/>
+      <velocitySuppressionReionization value="35.0"/>
   </accretionHalo>
 
   
@@ -179,7 +182,6 @@
   
 
   <!-- Hot halo ram pressure stripping options -->
-  <!-- font2008 -->
   <hotHaloRamPressureStripping value="font2008"/>
   <hotHaloRamPressureForce value="font2008"/>
   <hotHaloRamPressureTimescale value="ramPressureAcceleration"/>
@@ -229,11 +231,7 @@
   </stellarPopulation>
   <!-- <elementsToTrack value="C N O Fe H He"/> -->
   
-  <mergerTreeMassResolution value="fixed">
-    <massResolution value="1.0e9"/>
-  </mergerTreeMassResolution>
   
-
   <!-- Orbiting model of satellites -->
 
     <!-- Values taken from Yang et al. (2020) for their gamma=0 case using the Caterpillar simulations as calibration target -->
