@@ -7,11 +7,7 @@
   <task value="multi">
     <task value="evolveForests">
     </task>
-    <task value="haloMassFunction">
-        <haloMassMinimum value="1.0e05"/>
-        <haloMassMaximum value="1.0e7"/>
-        <pointsPerDecade value="30"    />
-    </task>
+    <task value="haloMassFunction"/>
   </task>
 
   <!-- Component selection -->
@@ -111,12 +107,12 @@
   
   <!--<mergerTreeBuildMasses value="sampledDistributionUniform">
     <massTreeMinimum value="1.0e05"/>
-    <massTreeMaximum value="1.0e13"/>
+    <massTreeMaximum value="1.0e20"/>
     <treesPerDecade value="30"/>
   </mergerTreeBuildMasses> -->
   
   <mergerTreeBuildMassDistribution value="powerLaw">
-      <exponent value="1"/>
+      <exponent value="0.5"/>
    </mergerTreeBuildMassDistribution>
   
   <mergerTreeMassResolution value="fixed">
