@@ -109,14 +109,14 @@
     <accuracyFirstOrder value="+0.10"/>
   </mergerTreeBranchingProbability>
   
-  <mergerTreeBuildMasses value="sampledDistributionUniform">
+  <!--<mergerTreeBuildMasses value="sampledDistributionUniform">
     <massTreeMinimum value="1.0e06"/>
     <massTreeMaximum value="1.0e15"/>
     <treesPerDecade value="30"/>
-  </mergerTreeBuildMasses>
+  </mergerTreeBuildMasses>-->
   
   <mergerTreeBuildMassDistribution value="powerLaw">
-      <exponent value="0.5"/>
+      <exponent value="1"/>
    </mergerTreeBuildMassDistribution>
   
   <mergerTreeMassResolution value="fixed">
