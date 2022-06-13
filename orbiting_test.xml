@@ -120,7 +120,7 @@
    </mergerTreeBuildMassDistribution>
   
   <mergerTreeMassResolution value="fixed">
-    <massResolution value="1.0e4"/>
+    <massResolution value="1.0e9"/>
   </mergerTreeMassResolution>
   
   
