@@ -109,11 +109,11 @@
     <accuracyFirstOrder value="+0.10"/>
   </mergerTreeBranchingProbability>
   
-  <!--<mergerTreeBuildMasses value="sampledDistributionUniform">
+  <mergerTreeBuildMasses value="sampledDistributionUniform">
     <massTreeMinimum value="1.0e06"/>
     <massTreeMaximum value="1.0e15"/>
     <treesPerDecade value="30"/>
-  </mergerTreeBuildMasses>-->
+  </mergerTreeBuildMasses>
   
   <mergerTreeBuildMassDistribution value="powerLaw">
       <exponent value="1"/>
@@ -189,10 +189,7 @@
   <starveSatellites value="true"/>
   <hotHaloTrackStrippedGas value="true"/>
   
-  <ramPressureStripping value="simpleSpherical">
-      <rateFractionalMaximum value="10.0"/>
-      <beta value="1"/>
-  </ramPressureStripping>
+ 
   
   <!-- Galactic structure solver options -->
   <galacticStructureSolver value="equilibrium"/>
@@ -362,8 +359,6 @@
     </nodeOperator>
 
     <nodeOperator value="satelliteDecelerationSIDM"/>
-    <nodeOperator value="ramPressureMassLossSpheroids"/>
-    <nodeOperator value="ramPressureMassLossDisks"/>
     <nodeOperator value="satelliteEvaporationSIDM"/>
     
     <nodeOperator value="satelliteDynamicalFriction"/>
@@ -376,6 +371,20 @@
     <nodeOperator value="tidalMassLossSpheroids"/>
     <nodeOperator value="massCooled"/>
     <nodeOperator value="coolingEnergyRadiated"/>
+    
+    
+    <nodeOperator value="ramPressureMassLossSpheroids">
+      <ramPressureStripping value="simpleSpherical">
+        <rateFractionalMaximum value="10.0"/>
+          <beta value="1"/>
+    </ramPressureStripping>
+    </nodeOperator>
+    <nodeOperator value="ramPressureMassLossDisks">
+      <ramPressureStripping value="simpleCylindrical">
+        <rateFractionalMaximum value="10.0"/>
+          <beta value="1"/>
+          </ramPressureStripping> 
+    </nodeOperator>
 
   </nodeOperator>
 
