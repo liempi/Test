@@ -29,11 +29,12 @@
   
   <componentSpheroid value="standard"/>
     
-  <componentPosition value="cartesian"/>
+  <componentPosition value="preset"/>
   
   <diskMassDistribution value="exponentialDisk">
     <dimensionless value="true"/>
   </diskMassDistribution>
+  
   
   <diskLuminositiesStellarInactive value="false"/>
   <diskStarFormationInSatellites value="false"/>
@@ -49,6 +50,8 @@
   
   <componentSpin value="scalar"/>
 
+  
+  
   <!-- Cosmological parameters and options -->
   <cosmologyFunctions value="matterLambda"/>
   <cosmologyParameters value="simple">
@@ -120,7 +123,7 @@
    </mergerTreeBuildMassDistribution>
   
   <mergerTreeMassResolution value="fixed">
-    <massResolution value="1.0e10"/>
+    <massResolution value="1.0e9"/>
   </mergerTreeMassResolution>
   
   
@@ -276,6 +279,7 @@
   
   <!-- Black hole options -->
   <blackHoleBinaryMergers value="rezzolla2008"/>
+  
   <blackHoleSeedMass value="1000"/>
   <blackHoleWindEfficiency value="0.0024"/>
   <blackHoleWindEfficiencyScalesWithRadiativeEfficiency value="true"/>
@@ -373,18 +377,13 @@
     <nodeOperator value="coolingEnergyRadiated"/>
     
     
-    <nodeOperator value="ramPressureMassLossSpheroids">
-      <ramPressureStripping value="simpleSpherical">
-        <rateFractionalMaximum value="10.0"/>
+    <nodeOperator value="ramPressureMassLossSpheroids">      <ramPressureStripping value="simpleSpherical">            <rateFractionalMaximum value="10.0"/>
           <beta value="1"/>
     </ramPressureStripping>
     </nodeOperator>
-    <nodeOperator value="ramPressureMassLossDisks">
-      <ramPressureStripping value="simpleCylindrical">
-        <rateFractionalMaximum value="10.0"/>
+    <nodeOperator value="ramPressureMassLossDisks">      <ramPressureStripping value="simpleCylindrical">              <rateFractionalMaximum value="10.0"/>
           <beta value="1"/>
-          </ramPressureStripping> 
-    </nodeOperator>
+          </ramPressureStripping>                                   </nodeOperator>
 
   </nodeOperator>
 
