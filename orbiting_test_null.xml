@@ -17,7 +17,7 @@
   <!-- Component selection -->
   <componentBasic value="standard"/>
   
-  <componentBlackHole value="standard"/>
+  <componentBlackHole value="null"/>
   
   <componentDarkMatterProfile value="scale"/>
   
