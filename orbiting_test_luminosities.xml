@@ -38,6 +38,10 @@
     <dimensionless value="true"/>
   </diskMassDistribution>
   
+  <spheroidMassDistribution value="hernquist">
+    <dimensionless value="true"/>
+  </spheroidMassDistribution>
+  
   <diskLuminositiesStellarInactive value="false"/>
   <diskStarFormationInSatellites value="false"/>
   <diskRadiusSolverCole2000Method value="false"/>
@@ -46,11 +50,8 @@
   <starveSatellitesOutflowed value="false"/>
   <spheroidLuminositiesStellarInactive value="false"/>
 
-  <spheroidMassDistribution value="hernquist">
-    <dimensionless value="true"/>
-  </spheroidMassDistribution>
+
   
-  <componentSpin value="scalar"/>
 
   <!-- Cosmological parameters and options -->
   <cosmologyFunctions value="matterLambda"/>
