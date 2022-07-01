@@ -51,8 +51,6 @@
   <spheroidLuminositiesStellarInactive value="false"/>
 
 
-  
-
   <!-- Cosmological parameters and options -->
   <cosmologyFunctions value="matterLambda"/>
   <cosmologyParameters value="simple">
@@ -124,9 +122,8 @@
    </mergerTreeBuildMassDistribution>
   
   <mergerTreeMassResolution value="fixed">
-    <massResolution value="1.0e06"/>
+    <massResolution value="1.0e09"/>
   </mergerTreeMassResolution>
-  
   
   <!-- Substructure hierarchy options -->
   <mergerTreeNodeMerger value="singleLevelHierarchy"/>
@@ -156,7 +153,6 @@
       <redshiftReionization value="9.97"/>
       <velocitySuppressionReionization value="35.0"/>
   </accretionHalo>
-
   
   <!-- Hot halo gas cooling model options -->
   <hotHaloMassDistribution value="betaProfile"/>
@@ -189,7 +185,6 @@
     <ageFactor value="0.835280449340279"/>
   </coolingTimeAvailable>
   
-
   <!-- Hot halo ram pressure stripping options -->
   <hotHaloRamPressureStripping value="font2008"/>
   <hotHaloRamPressureForce value="font2008"/>
@@ -197,8 +192,6 @@
   <hotHaloOutflowStrippingEfficiency value="0.1"/>
   <starveSatellites value="true"/>
   <hotHaloTrackStrippedGas value="true"/>
-  
- 
   
   <!-- Galactic structure solver options -->
   <galacticStructureSolver value="equilibrium"/>
@@ -235,8 +228,7 @@
     <recycledFraction value="0.46"/>
     <metalYield value="0.035"/>
   </stellarPopulation>
-  <!-- <elementsToTrack value="C N O Fe H He"/> -->
-  
+  <elementsToTrack value="C N O Fe H He"/> 
   
   <!-- Orbiting model of satellites -->
 
@@ -254,8 +246,6 @@
     <satelliteTidalStripping    value="zentner2005">
       <efficiency       value="2.86"/>
     </satelliteTidalStripping>
-
-   
 
   <!-- AGN feedback options -->
   <hotHaloExcessHeatDrivesOutflow value="true"/>
@@ -314,7 +304,6 @@
   <mergerRemnantSize value="cole2000">
     <energyOrbital value="1"/>
   </mergerRemnantSize>
-
   
   <nodePropertyExtractor value="multi">
      <nodePropertyExtractor value="nodeIndices"/>
@@ -450,17 +439,16 @@
   <!-- Local Group stellar mass function -->
   <outputAnalysis value="localGroupMassFunction"/> <!-- Analysis #18 -->
   </outputAnalysis>
-
   
-  <luminosityFilter value="SDSS_g   SDSS_g   SDSS_g SDSS_r SDSS_r   SDSS_r SDSS_g   SDSS_g   SDSS_g SDSS_r SDSS_r   SDSS_r "/>
+  <luminosityFilter value="SDSS_g  SDSS_g  SDSS_g  SDSS_r  SDSS_r  SDSS_r  SDSS_g  SDSS_g  SDSS_g  SDSS_r  SDSS_r  SDSS_r"/>
    
-   <luminosityType value="observed observed observed observed observed observed  rest     rest     rest     rest     rest     rest  "/>
+   <luminosityType value="observed  observed  observed  observed  observed  observed  rest  rest  rest  rest  rest  rest"/>
    
-   <luminosityRedshift value="0.0 6.0 10 0.0 6.0 10 0.0 6.0 10 0.0 6.0 10 "/>
+   <luminosityRedshift value="0.0  6.0  10.0  0.0  6.0  10.0  0.0  6.0 10.0  0.0  6.0  10.0"/>
 
-   
-   <luminosityBandRedshift value=" 0.10  0.10  0.10  0.10  0.10   0.10     0.10     0.10     0.10     0.10     0.10         0.10   "/>
-   <luminosityPostprocessSet value=" default  default  default  default  default  default  default  default  default  default  default         default "/>
+   <luminosityBandRedshift value="0.10  0.10  0.10  0.10  0.10  0.10  0.10  0.10  0.10  0.10  0.10  0.10"/>
+  
+   <luminosityPostprocessSet value=" default  default  default  default  default  default  default  default  default  default  default  default "/>
    <stellarPopulationSpectraPostprocessorBuilder value="lookup">
      <names value="default recent"/>
      <stellarPopulationSpectraPostprocessor value="inoue2014"/>
