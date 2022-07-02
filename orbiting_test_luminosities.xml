@@ -308,14 +308,17 @@
   <nodePropertyExtractor value="multi">
      <nodePropertyExtractor value="nodeIndices"/>
      <nodePropertyExtractor value="treeWeight"/>
-     <nodePropertyExtractor value="velocityDispersion">
-         <radiusSpecifiers value= "spheroidHalfMassRadius:spheroid:stellar:lineOfSight:1.25"/>
-     </nodePropertyExtractor>
+    
      <nodePropertyExtractor value="velocityDispersion">
          <radiusSpecifiers value= "spheroidHalfMassRadius:spheroid:stellar:lineOfSight:1.0"/>
      </nodePropertyExtractor>
+  
+      <nodePropertyExtractor value="massProfile">
+         <radiusSpecifiers value= "spheroidHalfMassRadius:spheroid:stellar:lineOfSight:1.0"/>
+     </nodePropertyExtractor>
+
     
-     <nodePropertyExtractor value="velocityDispersion">
+    <!-- <nodePropertyExtractor value="velocityDispersion">
          <radiusSpecifiers value= "spheroidHalfMassRadius:spheroid:stellar:lineOfSight:0.75"/>
      </nodePropertyExtractor>
      
@@ -327,15 +330,14 @@
          <radiusSpecifiers value= "spheroidHalfMassRadius:spheroid:stellar:lineOfSight:0.25"/>
      </nodePropertyExtractor>
      
-     
+          <nodePropertyExtractor value="velocityDispersion">
+         <radiusSpecifiers value= "spheroidHalfMassRadius:spheroid:stellar:lineOfSight:1.25"/>
+     </nodePropertyExtractor>
      
      <nodePropertyExtractor value="massProfile">
          <radiusSpecifiers value= "spheroidHalfMassRadius:spheroid:stellar:lineOfSight:1.25"/>
      </nodePropertyExtractor>
     
-     <nodePropertyExtractor value="massProfile">
-         <radiusSpecifiers value= "spheroidHalfMassRadius:spheroid:stellar:lineOfSight:1.0"/>
-     </nodePropertyExtractor>
 
      <nodePropertyExtractor value="massProfile">
          <radiusSpecifiers value= "spheroidHalfMassRadius:spheroid:stellar:lineOfSight:0.75"/>
@@ -347,8 +349,7 @@
     
      <nodePropertyExtractor value="massProfile">
          <radiusSpecifiers value= "spheroidHalfMassRadius:spheroid:stellar:lineOfSight:0.25"/>
-     </nodePropertyExtractor>
-
+     </nodePropertyExtractor> -->
 
    </nodePropertyExtractor>
   
