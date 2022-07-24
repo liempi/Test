@@ -477,7 +477,7 @@
    
    <luminosityRedshift value="0.0  6.0  0.0  6.0  0.0  6.0  0.0  6.0"/>
 
-   <luminosityBandRedshift value="0.10  0.10  0.10  0.10  0.10  0.10  0.10  0.10  0.10  0.10  0.10  0.10"/>
+   <luminosityBandRedshift value="0.10  0.10  0.10  0.10  0.10  0.10  0.10  0.10"/>
   
    <luminosityPostprocessSet value=" default  default  default  default  default  default  default  default"/>
    <stellarPopulationSpectraPostprocessorBuilder value="lookup">
