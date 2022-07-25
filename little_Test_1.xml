@@ -310,10 +310,6 @@
      <nodePropertyExtractor value="velocityDispersion">
          <radiusSpecifiers value= "spheroidHalfMassRadius:spheroid:stellar:lineOfSight:1.0"/>
      </nodePropertyExtractor>
-  
-      <nodePropertyExtractor value="massProfile">
-         <radiusSpecifiers value= "spheroidHalfMassRadius:spheroid:stellar:lineOfSight:1.0"/>
-     </nodePropertyExtractor>
    </nodePropertyExtractor>
   
   <!-- Node evolution and physics -->
