@@ -8,7 +8,7 @@
     <task value="evolveForests">
     </task>
     <task value="haloMassFunction">
-        <haloMassMinimum value="1.0e10"/>
+        <haloMassMinimum value="1.0e05"/>
         <haloMassMaximum value="1.0e15"/>
         <pointsPerDecade value="10"    />
     </task>
@@ -114,7 +114,7 @@
   </mergerTreeBranchingProbability>
   
   <mergerTreeBuildMasses value="sampledDistributionUniform">
-    <massTreeMinimum value="1.0e10"/>
+    <massTreeMinimum value="1.0e05"/>
     <massTreeMaximum value="1.0e15"/>
     <treesPerDecade value="2"/>
   </mergerTreeBuildMasses>
