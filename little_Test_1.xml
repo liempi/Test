@@ -314,41 +314,6 @@
       <nodePropertyExtractor value="massProfile">
          <radiusSpecifiers value= "spheroidHalfMassRadius:spheroid:stellar:lineOfSight:1.0"/>
      </nodePropertyExtractor>
-
-    
-    <!-- <nodePropertyExtractor value="velocityDispersion">
-         <radiusSpecifiers value= "spheroidHalfMassRadius:spheroid:stellar:lineOfSight:0.75"/>
-     </nodePropertyExtractor>
-     
-     <nodePropertyExtractor value="velocityDispersion">
-         <radiusSpecifiers value= "spheroidHalfMassRadius:spheroid:stellar:lineOfSight:0.5"/>
-     </nodePropertyExtractor>
-    
-     <nodePropertyExtractor value="velocityDispersion">
-         <radiusSpecifiers value= "spheroidHalfMassRadius:spheroid:stellar:lineOfSight:0.25"/>
-     </nodePropertyExtractor>
-     
-          <nodePropertyExtractor value="velocityDispersion">
-         <radiusSpecifiers value= "spheroidHalfMassRadius:spheroid:stellar:lineOfSight:1.25"/>
-     </nodePropertyExtractor>
-     
-     <nodePropertyExtractor value="massProfile">
-         <radiusSpecifiers value= "spheroidHalfMassRadius:spheroid:stellar:lineOfSight:1.25"/>
-     </nodePropertyExtractor>
-    
-
-     <nodePropertyExtractor value="massProfile">
-         <radiusSpecifiers value= "spheroidHalfMassRadius:spheroid:stellar:lineOfSight:0.75"/>
-     </nodePropertyExtractor>
-
-     <nodePropertyExtractor value="massProfile">
-         <radiusSpecifiers value= "spheroidHalfMassRadius:spheroid:stellar:lineOfSight:0.5"/>
-     </nodePropertyExtractor>
-    
-     <nodePropertyExtractor value="massProfile">
-         <radiusSpecifiers value= "spheroidHalfMassRadius:spheroid:stellar:lineOfSight:0.25"/>
-     </nodePropertyExtractor> -->
-
    </nodePropertyExtractor>
   
   <!-- Node evolution and physics -->
