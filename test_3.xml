@@ -36,13 +36,13 @@
     <dimensionless value="true"/>
   </spheroidMassDistribution>
   
-  <diskLuminositiesStellarInactive value="true"/>
+  <diskLuminositiesStellarInactive value="false"/>
   <diskStarFormationInSatellites value="false"/>
   <diskRadiusSolverCole2000Method value="false"/>
   <diskOutputStarFormationRate value="true"/>
   <spheroidOutputStarFormationRate value="true"/>
   <starveSatellitesOutflowed value="false"/>
-  <spheroidLuminositiesStellarInactive value="true"/>
+  <spheroidLuminositiesStellarInactive value="false"/>
 
 
   <!-- Cosmological parameters and options -->
@@ -404,10 +404,10 @@
     <timestepHostRelative value="0.100"/>
   </mergerTreeEvolver>
   
-  <mergerTreeOperator value="sequence">
-      <mergerTreeOperator value="dumpToGraphViz"/>
-      <mergerTreeOperator value="render"/>
-  </mergerTreeOperator>
+      <mergerTreeOperator value="dumpToGraphViz">
+          <massMinimum value="1.0e10"/>
+          <massMaximum value="1.0e15"/>
+      </mergerTreeOperator>
 
   <!-- Output options -->
   <outputFileName value="little_test_2.hdf5"/>
