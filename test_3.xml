@@ -81,7 +81,7 @@
 
   <!-- Background radiation -->
   <radiationFieldIntergalacticBackground value="intergalacticBackgroundInternal">
-    <wavelengthCountPerDecade value="50"/>
+    <wavelengthCountPerDecade value="2"/>
     <timeCountPerDecade       value="2"/>
   </radiationFieldIntergalacticBackground>
   
@@ -405,10 +405,7 @@
   </mergerTreeEvolver>
   
   <mergerTreeOperator value="sequence">
-      <mergerTreeOperator value="dumpToGraphViz">
-          <massMinimum value="1.0e05"/>
-          <massMaximum value="1.0e15"/>
-      </mergerTreeOperator>
+      <mergerTreeOperator value="dumpToGraphViz"/>
       <mergerTreeOperator value="render"/>
   </mergerTreeOperator>
 
